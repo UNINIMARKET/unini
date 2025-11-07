@@ -1,0 +1,78 @@
+/* MAIN 페이지 반응형 */
+@media screen and (max-width:1800px) {
+    main .main_contents_detail .main_price,
+    main .main_contents_detail .main_c_title {font-size: 0.81rem; line-height: 1.7;}
+    main .main_contents_detail .main_c_title {margin-bottom: 2px;}
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small {width: 100%;}
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small .new_detail > p:first-child {
+        margin-bottom: 6px;
+    }
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link > p {display: none;}
+}
+/* =========================================main 1300PX 이하 */
+@media screen and (max-width:1300px) {
+    .contents_wrap {margin-left: 0;}
+    .contents_wrap > div {margin-bottom: 100px;}
+    .best_wrap .b_wrapper {padding-left:40px;}
+    .best_wrap .b_wrapper .swiper-button-prev,
+    .best_wrap .b_wrapper .swiper-button-next {display: none;}
+    .contents_wrap .new_wrap .new_contents {padding-left:40px;}
+    .contents_wrap .new_wrap .new_contents > div {width: calc((100% - (8px * 3)) / 4);}
+    .contents_wrap .new_wrap .new_contents .new_5 {display: none;}
+    .review_wrap .review_wrapper {padding-left: 40px;}
+    .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_content_detail {display: none;}
+    .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_plus_link {display: block;}
+    .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_black {height: 0;}
+    .contents_wrap .md_wrap .md_contents_wrap .md_contents::after {
+        content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));
+    }
+    .review_wrap .review_wrapper .review_slide .swiper-slide > p {
+        overflow: hidden;
+        text-overflow: ellipsis;  display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link {
+        padding: 0;padding-top: 6px; border-top: 1px solid #eee;
+    }
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small {align-items: center;}
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small > p img {
+        width: 30px; height: 30px;
+    } 
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small .new_detail > p {font-size: 0.81rem;}
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small .new_detail > p:last-child {display: none;}
+    .bnr_2 {height: 464px; padding-top: 160px;}
+    footer {margin-left: 0;}
+    footer .f_btm {flex-flow: column nowrap; justify-content: start; margin-top: 30px;}
+    footer .f_btm p:first-child {margin-bottom: 8px;}
+}
+@media screen and (max-width:650px) {
+    .contents_wrap > div {margin-bottom: 70px;}
+    main .main_contents_detail .main_price,
+    main .main_contents_detail .main_c_title {line-height: 1.5;}
+    main .main_bnr > a {display: none;}
+    .best_wrap {margin-top: 0px;}
+    .best_wrap .b_wrapper {padding-left:12px;}
+    .contents_wrap .md_wrap .md_contents_wrap {flex-flow: row wrap; justify-content: space-between;}
+    .contents_wrap .md_wrap .md_contents_wrap .md_contents {width: calc(100% / 2);}
+    .contents_wrap .new_wrap .new_contents {padding: 0 12px;}
+    .contents_wrap .new_wrap .new_contents > div {width: calc((100% - (8px * 2)) / 3);}
+    .contents_wrap .new_wrap .new_contents .new_4 {display: none;}
+    .review_wrap .review_wrapper {padding-left: 12px;}
+    .review_wrap .review_wrapper .review_slide .swiper-slide > p {
+        margin-bottom: 16px;
+    }
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small > p {margin-right: 4px;}
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small {align-items: flex-start;}
+    .bnr_2 {height: 314px; padding-top: 80px;}
+    .bnr_2 h1 {font-size: 1.13rem;}
+    .bnr_2 p {font-size: 0.81rem;}
+    .bnr_2 .more_btn {padding: 8px 34px; font-size: 0.81rem;}
+    footer .f_top {flex-flow: column nowrap; align-items: start;}
+    footer .f_top .ft_1 a {}
+    footer .f_top address {margin-left: 0; margin-top: 30px;}
+}
+@media screen and (max-width:500px){
+    .review_wrap .review_wrapper .review_slide .swiper-slide .review_link {display: none;}
+}

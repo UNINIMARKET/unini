@@ -1,0 +1,45 @@
+main {
+    max-width:1710px; min-width:320px;
+    margin-left: 210px;
+    padding: 50px 40px;
+}
+main h1 {font-family: "Lora", serif; font-size: 1.25rem;}
+main ul {margin: 40px 0;}
+main ul li {display: inline-block; margin-right: 5px;}
+main ul li a {
+    display: inline-block; font-family: "Lora", serif; font-size: 0.81rem;
+    padding: 10px 20px; border: 1px solid #E6E6E6;
+}
+main ul li > .active {border: 1px solid #000;}
+main ul li a:hover {background-color: rgba(0,0,0,0.1);}
+main .list_wrap {display: flex; flex-flow: row wrap; justify-content: space-between;}
+main .list_wrap .list_contents_wrap {width: calc((100% - (20px * 4)) / 5); margin-bottom: 68px;}
+
+main .list_wrap .list_contents_wrap .cloth_img {
+    display: block; margin-bottom: 16px; overflow: hidden;
+}
+main .list_wrap .list_contents_wrap .cloth_img img {
+    width: 100%; transition: transform 0.3s;
+}
+main .list_wrap .list_contents_wrap .cloth_img img:hover {
+    transform: scale(1.02);
+}
+
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_color {margin: 16px 0 8px 0;}
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_color > p {
+    width: 15px; height: 12px; border-radius: 15px; border: 1px solid rgba(0,0,0,0.3);
+    display: inline-block;
+}
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_color > p:first-child {background-color: #000;}
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_color > p:last-child {background-color: #959595;}
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_title,
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_price {
+    font-size: 0.88rem; letter-spacing: -0.02em;
+}
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_title {margin-bottom: 8px; line-height: 1.4;}
+main .viewmore {
+    font-size: 0.94rem; border: 1px solid #e6e6e6;
+    display: block; margin: 0 auto; width: 180px; padding: 11px;
+    text-align: center; margin-top: 20px; margin-bottom: 80px;
+}
+main .viewmore:hover {background-color: rgba(0,0,0,0.1);}

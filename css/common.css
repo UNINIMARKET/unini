@@ -1,0 +1,73 @@
+.header_wrap {position: relative;}
+header {
+    position: fixed; left: 0; top: 0; z-index: 999;
+    background-color: #fff;
+    width: 210px; height: 100vh;
+    padding: 30px 0 40px 40px;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+header .h_top {}
+header .h_top h1 {padding-bottom: 20px; border-bottom: 1px solid #E6E6E6; margin-bottom: 40px;}
+header .h_top h1 a {}
+header .h_top h1 a img {}
+header .h_top nav {}
+header .h_top nav a,
+header .user_menu a {
+    display: block;
+    font-family: "Lora", serif; font-size: 0.83rem;
+    margin-bottom: 15px;
+}
+header .h_top nav a:hover,
+header .user_menu a:hover {
+    font-weight: 600;
+}
+header .h_top nav a {}
+header .user_menu {}
+header .user_menu a {}
+/* 반응형 제작 시 메뉴 */
+.header_wrap .hamburger_menu {
+    position: fixed; top: 30px; left: 40px;
+    z-index: 900; display: none;
+}
+.header_wrap  .hamburger_menu img {}
+.header_wrap .logo_center {
+    position: absolute; top: 30px; left: 50%;
+    z-index: 900; transform: translateX(-50%);
+    display: none;
+
+}
+.header_wrap .logo_center img {}
+.header_wrap .cover_black_viewport {
+    position: fixed; width: 100%; height: 100%;
+    z-index: 900; background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+/* footer */
+footer {
+    padding: 30px 40px;
+    max-width:1710px; min-width:320px;
+    margin-left: 210px;
+    padding-top: 50px;
+    border-top: 1px solid #eee;
+}
+footer * p,
+footer * a {font-size: 0.69rem; color: #2A2A2A;}
+footer .f_top {display: flex;}
+footer .f_top .ft_1 {}
+footer .f_top .ft_1 a {
+    display: flex; flex-flow: column nowrap;
+    margin-bottom: 8px;
+}
+footer .f_top address {margin-left: 280px;}
+footer .f_top address p {margin-bottom: 8px;}
+footer .f_btm {display: flex; justify-content: space-between; margin-top: 70px;}
+footer .f_btm p {}
+
+@media screen and (max-width:1300px) {
+    header {left: -300px;}
+    .header_wrap .hamburger_menu {display: block;}
+    .header_wrap .logo_center {display: block;}
+}
+@media screen and (max-width:650px) {
+    .header_wrap .hamburger_menu {left: 12px;}
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width:1300px) {
+    header {left: -300px;}
+    .header_wrap .hamburger_menu {display: block;}
+    .header_wrap .logo_center {display: block;}
+    main h1 {margin-top: 80px;}
+    main {margin-left: 0;}
+    main .list_wrap .list_contents_wrap {width: calc((100% - (16px * 3)) / 4);}
+    main ul li {margin-bottom: 5px; margin-right: 3px;}
+    footer {margin-left: 0;}
+    footer .f_btm {flex-flow: column nowrap; justify-content: start; margin-top: 30px;}
+    footer .f_btm p:first-child {margin-bottom: 8px;}
+}
+@media screen and (max-width:700px) {
+    .header_wrap .hamburger_menu {left: 12px;}
+    main {padding: 50px 12px;}
+    main .list_wrap .list_contents_wrap {width: calc((100% - 12px) / 2); margin-bottom: 40px;}
+    footer .f_top {flex-flow: column nowrap; align-items: start;}
+    footer .f_top address {margin-left: 0; margin-top: 30px;}
+    main .viewmore {margin-bottom: 50px;}
+}

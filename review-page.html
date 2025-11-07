@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품리스트 | Marie Market</title>
+    <!-- SWIPER 연결 코드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/review.css">
+    <link rel="stylesheet" href="./css/responsive-sub.css">
+    <!-- 웹폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="./js/common.js" defer></script>
+    <script src="./js/list.js" defer></script>
+</head>
+<body>
+    <div class="header_wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="h_top">
+                <h1><a href="./index.html"><img src="./image/logo.png" alt="#"></a></h1>
+                <nav>
+                    <a href="./product_list.html">Made-UNINI</a>
+                    <a href="./product_list.html">New</a>
+                    <a href="./product_list.html">Best</a>
+                    <a href="./product_list.html">Necklace</a>
+                    <a href="./product_list.html">Bracelet</a>
+                    <a href="./product_list.html">Earring</a>
+                    <a href="./product_list.html">review</a>    
+                </nav>
+            </div>
+            <div class="user_menu">
+                <a href="#">Login</a>
+                <a href="#">Cart</a>
+                <a href="#">Search</a>
+            </div>
+        </header>
+        <!-- 반응형 제작을 위한 메뉴 -->
+        <a href="#" class="hamburger_menu"><img src="./image/hamburger_b.png" alt="카테고리 메뉴"></a>
+        <h2><a href="./index.html" class="logo_center"><img src="./image/logo-center-sub.png" alt=""></a></h2>
+        <p class="cover_black_viewport"></p>
+    </div>
+    <!-- main -->
+    <main>
+        <h1>MADE-UNINI</h1>
+        <ul>
+            <li><a href="#" class="active">ALL</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">RING</a></li>
+            <li><a href="#">NECKLACE</a></li>
+            <li><a href="#">BRACELET</a></li>
+            <li><a href="#">EARRING</a></li>
+        </ul>
+        <div class="list_wrap">
+            <div class="list_contents_wrap">
+                <a href="" class="cloth_img"><img src="./image/sub.png" alt=""></a>
+                <div class="cloth_contents">
+                    <p class="cloth_title">[유니니] </p>
+                    <p class="cloth_price">무난하기도 하고 제가 화려한 옷을 입는걸 좋아하는 편인데 오히려 그래서 그런지 더 잘어울리는것 같아요.</p>
+                </div>
+            </div>
+            <div class="list_contents_wrap">
+                <a href="./product_detail.html" class="cloth_img"><img src="./image/sub2.png" alt=""></a>
+                <div class="cloth_contents">
+                    <p class="cloth_title">[유니니]</p>
+                    <p class="cloth_price">제가 평소에 좋아하는 스타일이라서 정말 마음에 들어요!</p>
+                </div>
+            </div>
+            <div class="list_contents_wrap">
+                <a href="./product_detail.html" class="cloth_img"><img src="./image/sub3.png" alt=""></a>
+                <div class="cloth_contents">
+                    <p class="cloth_title">[유니니]</p>
+                    <p class="cloth_price">남자다 보니까 평소에 악세서리는 잘 안했는데 해보니까 잘어울리는것 같고 크게 튀는것 같진 않아서 좋아요.</p>
+                </div>
+            </div>
+            <div class="list_contents_wrap">
+                <a href="./product_detail.html" class="cloth_img"><img src="./image/sub4.png" alt=""></a>
+                <div class="cloth_contents">
+                    <p class="cloth_title">[유니니]</p>
+                    <p class="cloth_price">직접 만든걸 끼니까 재밌기도하고 평소에 반지나 악세서리 잘안하는데 해봐도 좋은것 같아요.</p>
+                </div>
+            </div>
+            <div class="list_contents_wrap">
+                <a href="./product_detail.html" class="cloth_img"><img src="./image/sub5.png" alt=""></a>
+                <div class="cloth_contents">
+                    <p class="cloth_title">[유니니]</p>
+                    <p class="cloth_price">이쁜것 같아요 자주자주 이용할게요! 직접 만든거라서 더 좋은것 같아요.<p>
+                </div>
+            </div>
+             <div class="list_contents_wrap">
+                <a href="./product_detail.html" class="cloth_img"><img src="./image/sub6.png" alt=""></a>
+                <div class="cloth_contents">
+                    <p class="cloth_title">[유니니]</p>
+                    <p class="cloth_price">진짜 너무 이쁜것 같아요 자주자주 이용할게요!<p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="viewmore">더보기</a>
+    </main>
+    <!-- ================================FOOTER -->
+    <footer>
+        <div class="f_top">
+            <div class="ft_1">
+                <a href="#">이용약관</a>
+                <a href="#">이용안내</a>
+                <a href="#">개인정보처리방침</a>
+            </div>
+            <address>
+                <p>T : 070-7776-8268</p>
+                <p>email : rlarlrud0425@naver.com</p>
+                <p>운영시간 : CS PM11:00 - 20:00</p>
+                <p>점심시간 : 13:00 - 14:00</p>
+                <p>주말/공휴일 정상영업</p>
+            </address>
+        </div>
+        <div class="f_btm">
+            <p>주식회사유니  |  대표자 : 남윤인 |</p>
+            <p>(C) 2025 유니니마켓. Hosting by 카페24(주)</p>
+        </div>
+    </footer>
+</body>
+</html>
